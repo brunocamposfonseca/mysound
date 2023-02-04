@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="shortcut icon" href="images/logo-pint.png" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>App | MySound</title>
+</head>
+<body>
+    <div class="div1-main">
+        <div class="div2-container">
+            <div class="div3-content">
+                <div class="div3-Ctn__nav-bar">
+                    <div class="div4-Header-sdbr">
+                        <div class="div5-imgtxt-sdbr">
+                            <span class="span1-imgbox-sdbr">
+                                <img class="img1-img-sdbr" src="images/logo-pint.png">
+                            </span>
+                            <div class="div6-txtbox-sdbr">
+                                <span class="span2-txt-sdbr">MySound</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div4-Menubar-sdbr">
+                        <div class="div5-Topcontent-sdbr">
+                            <ul class="ul1-linksmenu-sdbr">
+                                <li class="li1-links-sdbr">
+                                    <a class="a1-links-sdbr active" href="app.html">
+                                        <i class="bi bi-house i1-icns-sdbr"></i>
+                                        <span class="span3-linktxt-sdbr">Início</span>
+                                    </a>
+                                </li>
+                                <li class="li1-links-sdbr">
+                                    <a class="a1-links-sdbr" href="teste.html">
+                                        <i class="bi bi-search i1-icns-sdbr"></i>
+                                        <span class="span3-linktxt-sdbr">Pesquisar</span>
+                                    </a>
+                                </li>
+                                <li class="li1-links-sdbr">
+                                    <a class="a1-links-sdbr" href="gener.html">
+                                        <i class="bi bi-vinyl i1-icns-sdbr"></i>
+                                        <span class="span3-linktxt-sdbr">Gêneros</span>
+                                    </a>
+                                </li>
+                                <li class="li1-links-sdbr">
+                                    <a class="a1-links-sdbr" href="playlist.html">
+                                        <i class="bi bi-music-note-list i1-icns-sdbr"></i>
+                                        <span class="span3-linktxt-sdbr">Playlist</span>
+                                    </a>
+                                </li>
+                                <li class="li1-links-sdbr">
+                                    <a class="a1-links-sdbr" href="artistas.html">
+                                        <i class="bi bi-person i1-icns-sdbr"></i>
+                                        <span class="span3-linktxt-sdbr">Artistas</span>
+                                    </a>
+                                </li>
+                                <li class="li1-links-sdbr">
+                                    <a class="a1-links-sdbr" href="likes.html">
+                                        <i class="bi bi-heart i1-icns-sdbr"></i>
+                                        <span class="span3-linktxt-sdbr">Curtidas</span>
+                                    </a>
+                                </li>
+                                <li class="li1-links-sdbr">
+                                    <a class="a1-links-sdbr" href="downloads.html">
+                                        <i class="bi bi-cloud-arrow-down i1-icns-sdbr"></i>
+                                        <span class="span3-linktxt-sdbr">Downloads</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div5-Bottomcontent-sdbr">
+                            <li class="li1-links-sdbr">
+                                <a class="a1-links-sdbr" href="app.html">
+                                    <i class="bi bi-download i1-icns-sdbr"></i>
+                                    <span class="span3-linktxt-sdbr">Instalar App</span>
+                                </a>
+                            </li>
+                            <li class="li1-links-sdbr">
+                                <a class="a1-links-sdbr" href="search.html">
+                                    <i class="bi bi-gear i1-icns-sdbr"></i>
+                                    <span class="span3-linktxt-sdbr">Configurações</span>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="div3-Ctn__top-bar">
+                    <div class="div1-arrows-topbar">
+                        <div class="div2-arrowbox-topbar">
+                            <button onclick="voltar()">
+                                <i class="bi bi-arrow-left-circle-fill arrow-topbar"  aria-label="Voltar" aria-expanded="false"></i>
+                            </button>
+                            
+                        </div>
+                        <div class="div2-arrowbox-topbar">
+                            <button onclick="ir()">
+                                <i class="bi bi-arrow-right-circle-fill arrow-topbar" aria-label="Avançar" aria-expanded="false"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="div1-pfldrop-topbar" aria-label="Bruno Fonseca">
+                        <div class="div2-pfldropbtn-topbar" onclick="toggle()">
+                            <div class="div3-pflimg-topbar">
+                                <img class="img1-pflimg-topbar" src="images/logo-pint.png">
+                            </div>
+                            <span class="span1-pflname-topbar">
+                                <span class="span2-pflname-topbar">Bruno Fonseca</span>
+                                <i class="bi bi-caret-down-fill i1-downarrow-topbar i1-pflicnarrow-topbar"></i>
+                                <i class="bi bi-caret-up-fill i1-uparrow-topbar i1-pflicnarrow-topbar"></i>
+                            </span>
+                        </div>
+                        <ul class="ul1-pfllist-topbar">
+                            <li class="li1-pfllistitm-topbar">
+                                <a href="#">
+                                    Editar Perfil
+                                </a>
+                            </li>
+                            <li class="li1-pfllistitm-topbar">
+                                <a href="#">
+                                    Perfil
+                                </a>
+                            </li>
+                            <li class="li1-pfllistitm-topbar">
+                                <a href="#">
+                                    Suporte
+                                </a>
+                            </li>
+                            <li class="li1-pfllistitm-topbar">
+                                <a href="#">
+                                    Sincronizar
+                                </a>
+                            </li>
+                            <div class="div1-faixah-topbar"></div>
+                            <li class="li1-pfllistitm-topbar">
+                                <a href="#">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div3-Ctn__main-view">
+                    <div class="div4-content-main-view">
+                        <div class="div4-cabecalho-main-view">
+                            <span class="span1-cabecalho-main-view">Bem vindo, Bruno Fonseca</span>
+                            <div class="box-artistas-fav">
+                                <div class="div-artistas">
+                                    <span class="img-artista"><img class="img-box-artista" src="/sounds/jpg/capa5.jpg"></span>
+                                    <span class="nome-artista">Douglas Alves</span>
+                                </div>
+                                <div class="div-artistas">
+                                    <span class="img-artista"><img class="img-box-artista" src="/sounds/jpg/capa9.jpg"></span>
+                                    <span class="nome-artista">Milionário e Marciano</span>
+                                </div>
+                                <div class="div-artistas">
+                                    <span class="img-artista"><img class="img-box-artista" src="/sounds/jpg/capa2.jpg"></span>
+                                    <span class="nome-artista">Dschinghis Khan</span>
+                                </div>
+                                <div class="div-artistas">
+                                    <span class="img-artista"><img class="img-box-artista" src="/sounds/jpg/capa6.png"></span>
+                                    <span class="nome-artista">Milionário e José Rico</span>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="category">
+                            <div class="box-cat">
+                                <div class="info-cat">
+                                    <span class="name-cat"><a href="#">Sertanejo</a></span>
+                                    <span class="showr-all">Mostrar Tudo</span>
+                                </div>
+                                <div class="container-box-music">
+                                    <div class="box-music-cat">
+                                        <div class="music-cat">
+                                            <div class="img-music-cat">
+                                                <img class="img-music-cat-src" src="/sounds/jpg/capa7.jpg">
+                                                <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                            </div>
+                                            <div class="info-nusic-cat">
+                                                <span class="name-music-cat">Vestido de Seda</span>
+                                                <span class="artist-music-cat">Teodoro & Sampaio</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-music-cat">
+                                        <div class="music-cat">
+                                            <div class="img-music-cat">
+                                                <img class="img-music-cat-src" src="/sounds/jpg/capa6.png">
+                                                <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                            </div>
+                                            <div class="info-nusic-cat">
+                                                <span class="name-music-cat">Estrada da Vida</span>
+                                                <span class="artist-music-cat">Milionário e José Rico</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-music-cat">
+                                        <div class="music-cat">
+                                            <div class="img-music-cat">
+                                                <img class="img-music-cat-src" src="/sounds/jpg/capa8.png">
+                                                <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                            </div>
+                                            <div class="info-nusic-cat">
+                                                <span class="name-music-cat">Telefone Mudo</span>
+                                                <span class="artist-music-cat">Trio Parada Dura</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-music-cat">
+                                        <div class="music-cat">
+                                            <div class="img-music-cat">
+                                                <img class="img-music-cat-src" src="/sounds/jpg/capa9.jpg">
+                                                <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                            </div>
+                                            <div class="info-nusic-cat">
+                                                <span class="name-music-cat">Ainda Ontem</span>
+                                                <span class="artist-music-cat">Milionário e Marciano</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-music-cat">
+                                        <div class="music-cat">
+                                            <div class="img-music-cat">
+                                                <img class="img-music-cat-src" src="/sounds/jpg/capa6.png">
+                                                <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                            </div>
+                                            <div class="info-nusic-cat">
+                                                <span class="name-music-cat">Fim da Estrada</span>
+                                                <span class="artist-music-cat">Milionário e José Rico</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-music-cat">
+                                        <div class="music-cat">
+                                            <div class="img-music-cat">
+                                                <img class="img-music-cat-src" src="/sounds/jpg/capa8.png">
+                                                <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                            </div>
+                                            <div class="info-nusic-cat">
+                                                <span class="name-music-cat">As Andorinhas</span>
+                                                <span class="artist-music-cat">Trio Parada Dura</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-cat">
+                                <div class="info-cat">
+                                    <span class="name-cat"><a href="#">Gospel</a></span>
+                                    <span class="showr-all">Mostrar Tudo</span>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa5.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Hino 42 - Ó minh...</span>
+                                            <span class="artist-music-cat">Douglas Alves</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa5.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Hino 322 - Vem R...</span>
+                                            <span class="artist-music-cat">Fabiana Paula</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa5.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Hino 239 - Teu se...</span>
+                                            <span class="artist-music-cat">Douglas Alves</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa5.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Hino 76 - Cristo J...</span>
+                                            <span class="artist-music-cat">Douglas Alves</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa5.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Hino 247 - Se for...</span>
+                                            <span class="artist-music-cat">Douglas Alves</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa5.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Hino 293 - Tu és ...</span>
+                                            <span class="artist-music-cat">Douglas Alves</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa5.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Hino 220 - Cristo...</span>
+                                            <span class="artist-music-cat">Douglas Alves</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-cat">
+                                <div class="info-cat">
+                                    <span class="name-art"><a href="#">Artistas</a></span>
+                                    <span class="showr-all">Mostrar Tudo</span>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-art-cat">
+                                            <img class="img-art-cat-src" src="/sounds/jpg/capa7.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Teodoro & Sam...</span>
+                                            <span class="artist-music-cat">Artista</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-art-cat">
+                                            <img class="img-art-cat-src" src="/sounds/jpg/capa8.png">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Trio Parada Dura</span>
+                                            <span class="artist-music-cat">Artista</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-art-cat">
+                                            <img class="img-art-cat-src" src="/sounds/jpg/capa9.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Milionário e Mar...</span>
+                                            <span class="artist-music-cat">Ft.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-art-cat">
+                                            <img class="img-art-cat-src" src="/sounds/jpg/capa6.png">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Milionário e José...</span>
+                                            <span class="artist-music-cat">Artista</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-cat">
+                                <div class="info-cat">
+                                    <span class="name-cat"><a href="#">Instrumentais</a></span>
+                                    <span class="showr-all">Mostrar Tudo</span>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa10.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Nocturnes Op. 9...</span>
+                                            <span class="artist-music-cat">Frédéric Chopin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa4.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Rush E</span>
+                                            <span class="artist-music-cat">Neil Peart</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-cat">
+                                <div class="info-cat">
+                                    <span class="name-cat"><a href="#">Internacionais e Nacionais</a></span>
+                                    <span class="showr-all">Mostrar Tudo</span>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa2.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Moskay</span>
+                                            <span class="artist-music-cat">Dschinghis Khan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa3.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Erika</span>
+                                            <span class="artist-music-cat">Hearms Neal</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-music-cat">
+                                    <div class="music-cat">
+                                        <div class="img-music-cat">
+                                            <img class="img-music-cat-src" src="/sounds/jpg/capa1.jpg">
+                                            <a class="selct-music-cat" href="#"><i class="bi bi-play-circle-fill"></i></a>
+                                        </div>
+                                        <div class="info-nusic-cat">
+                                            <span class="name-music-cat">Hino da indepen...</span>
+                                            <span class="artist-music-cat">Orquestra musical do...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="div3-Ctn__player-bar">
+                    <div class="div1-modelcurt-playerbar">
+                        <div class="div2-modelcurt-playerbar">Música curtida</div>
+                    </div>
+                    <div class="div1-modelconnect-playerbar">
+                        <div class="div2-modelcnnt-playerbar">
+                            <div class="div3-dispatual">
+                                <img class="img1-imgcnnt-playerbar" src="">
+                                <span class="span1-infomuscnnt-playerbar">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div1-container-playerbar">
+                        <div class="div2-boxleft-playerbar">
+                            <div class="div3-boximage-playerbar">
+                                <a href="#"><img class="img1-img-playerbar" src=""></a>
+                            </div>
+                            <div class="div3-boxinfoctt-playerbar">
+                                <div class="div4-boxinfomusica-playerbar">
+                                    <a class="a1-titlemusica-playerbar a1-playera-playerbar a1-nomemusica-playerbar" href="#"></a>
+                                    <a class="a1-descrimusica-playerbar a1-playerb-playerbar a1-cantormusica-playerbar" href="#"></a>
+                                </div>
+                                <div class="div4-boxcurtida-playerbar">
+                                    <i class="bi bi-heart i1-playera-playerbar i1-curtida-playerbar" onclick="curtidaTrack()" aria-label="Curtir Música"></i>
+                                    <i class="bi bi-heart-fill i1-playera-playerbar i1-descurtida-playerbar" onclick="dcurtidaTrack()" aria-label="Descurtir Música"></i>
+                                </div>
+                                <div class="div4-pictureinpct-playerbar">
+                                    <i class="bi bi-pip i1-pctinpct-playerbar" onclick="pctinpctTrack()" aria-label="Picture in picture"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div2-boxcenter-playerbar">
+                            <div class="div3-boxcontrols-playerbar">
+                                <div class="div4-playback-playerbar div4-randomtrack-playerbar" onclick="randomTrack()">
+                                    <i class="bi bi-shuffle i1-playerb-playerbar i1-rdm-playerbar" aria-label="Ordem aleatória"></i>
+                                </div>
+                                <div class="div4-back-playerbar div4-wardplayer-playerbar div4-prevtrack-playerbar" onclick="prevTrack()">
+                                    <i class="bi bi-skip-backward-fill i1-anterior-playerbar i1-playera-playerbar" aria-label="Voltar"></i>
+                                </div>
+                                <div class="div4-playpause-player div4-playera-playerbar div4-playpausetrack-playerbar" onclick="playpauseTrack()">
+                                    <i class="bi bi-play-fill play" aria-label="Play"></i>
+                                    <i class="bi bi-pause-fill pause" aria-label="Pausar"></i>
+                                </div>
+                                <div class="div4-for-playerbar div4-wardplayer-playerbar div4-nexttrack-playerbar" onclick="nextTrack()">
+                                    <i class="bi bi-skip-forward-fill i1-posterior-playerbar i1-playera-playerbar" aria-label="Avançar"></i>
+                                </div>
+                                <div class="div4-playback-playerbar div4-repeattrack-playerbar" onclick="repeatTrack()">
+                                    <i class="bi bi-repeat i1-playerb-playerbar i1-rpt-playerbar" aria-label="Repetir"></i>
+                                </div>
+                            </div>
+                            <div class="div3-boxprogress-playerbar">
+                                <div class="div4-timeleftprogress-playerbar">
+                                    <p class="p1-playerb-playerbar p1-time-playerbar p1-currenttime-playerbar">00:00</p>
+                                </div>
+                                <div class="div4-progressbar-playerbar">
+                                    <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
+                                </div>
+                                <div class="div4-timerightprogress-playerbar">
+                                    <p class="p1-playerb-playerbar p1-time-playerbar p1-totalduration-playerbar">00:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div2-boxright-playerbar">
+                            <div class="div3-conecteva-playerbar">
+                                <a href="#" class="a1-evacnct-playerbar" aria-label="Conectar com a Eva"><img class="img1-evaconnect-playerbar" src="images/logo-eva.png"></a>
+                            </div>
+                            <div class="div3-cnntdisp-playerbar">
+                                <i class="bi bi-tv i1-cnntdisp-playerbar" aria-label="Conectar a um dispositivo" onclick="pctinpct()"></i>
+                            </div>
+                            <div class="div3-volumecontrol-playerbar">
+                                <div class="div4-btnvolume-playerbar">
+                                    <i class="bi bi-volume-mute-fill i1-playera-playerbar i1-volmute-playerbar i1-vol-none-playerbar i1-volume-playerbar i1-marginvol-playerbar"  aria-label="Som"></i>
+                                    <i class="bi bi-volume-down-fill i1-playera-playerbar i1-voldown-playerbar i1-vol-none-playerbar i1-volume-playerbar i1-marginvol-playerbar" aria-label="Mute"></i>
+                                    <i class="bi bi-volume-up-fill i1-playera-playerbar i1-volup-playerbar i1-volume-playerbar i1-marginvol-playerbar" aria-label="Mute"></i>
+                                    <input type="range" min="1" max="100" value="100" class="volume-slider" onchange="setVolume()">
+                                </div>
+                            </div>
+                            <div class="div3-expandplayer-playerbar">
+                                <i class="bi bi-caret-up-fill i1-uparrow-playerbar" aria-label="Expandir"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div1-cookie-modal">
+        <div class="div2-cookiectn-modal">
+            <i class="bx bx-cookie"></i>
+            <span class="span1-cookie-modal">Aceitar Cookies</span>
+        </div>
+        <div class="div2-cookieinfo-modal">
+            <p class="p1-cookiep-modal">Este site usa cookies para ajudá-lo a ter uma experiência de navegação superior e mais relevante no site. <a href="#">Política de Privacidade</a></p>
+        </div>
+        <div class="div2-cookiebtns-modal">
+            <button class="btn1-aceitar-modal btn1-cookiebtn-modal" id="aceitarcookie">Aceitar</button>
+            <button class="btn1-recusar-modal btn1-cookiebtn-modal" id="recusarcookie">Recusar</button>
+        </div>
+    </div>
+    <div class="div1-rgtbtn-container">
+        <div class="div2-rgtbtn-content">
+            <ul class="ul1-rgtbtn-menu">
+                <li class="li1-rgtbtn-itmbox">
+                    <button class="btn1-rgtbtn-itmbtn">
+                        <span class="span1-rgtbtn-item">Adicionar à fila</span>
+                    </button>
+                </li>
+                <li class="li1-rgtbtn-item">
+                    <button class="btn1-rgtbtn-itmbtn">
+                        <span class="span1-rgtbtn-item">Ir para a rádio da playlist</span>
+                    </button>
+                </li>
+                <li class="li1-rgtbtn-item">
+                    <button class="btn1-rgtbtn-itmbtn">
+                        <span class="span1-rgtbtn-item">adicionar a sua biblioteca</span>
+                    </button>
+                </li>
+                <li class="li1-rgtbtn-item li1-espbdrtop-rgtbtn">
+                    <button class="btn1-rgtbtn-itmbtn">
+                        <span class="span1-rgtbtn-item">Abrir no app para Desktop</span>
+                    </button>
+                </li>
+                <li class="li1-rgtbtn-item li1-espbdrtop-rgtbtn">
+                    <button class="btn1-rgtbtn-itmbtn">
+                        <span class="span1-rgtbtn-item">Compartilhar</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+<audio src=""></audio>
+<script src="app.js"></script>
+<script src="player.js"></script>
+</body>
+</html>
